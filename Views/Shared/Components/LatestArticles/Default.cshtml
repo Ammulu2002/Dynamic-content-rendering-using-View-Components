@@ -1,0 +1,11 @@
+@model List<ViewComponentDemo.Components.LatestArticlesViewComponent.Article>
+
+<h3>Latest Articles</h3>
+<ul>
+    @foreach (var article in Model)
+    {
+        <li>
+            <a href="/Home/ArticleDetails?id=@article.Id">@article.Title</a>
+        </li>
+    }
+</ul>
